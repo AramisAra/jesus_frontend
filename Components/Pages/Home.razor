@@ -1,0 +1,32 @@
+﻿@page "/"
+
+
+<PageTitle>Landing Page</PageTitle>
+<link rel="stylesheet" href="Home.css"/>
+
+<body class="overflow-hidden bg-Tan">
+  <div class="relative bg-cover bg-no-repeat text-center">
+    <img src="@imagePath" alt="Backround Photo" 
+    class="h-screen w-screen 
+    mobile:pt-[75px] mobile:pb-[75px]
+    tablet:pt-[100px] tablet:pb-[100px]
+    K2:pt-[120px] K2:pb-[120px]
+    K4:pt-[325px] K4:pb-[325px]
+    object-cover" />
+    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.4)">
+      <div class="flex h-full items-center justify-center">
+        <div class="text-white K2:pl-[950px] HD:pl-[600px] UHD:pl-[675px]">
+          <h2 class="mb-2 mobile:text-[56px] UHD:text-[64px] K2:text-[80px] tracking-[5px]">IN-D OVEN</h2>
+          <h4 class="mb-6 text-[30px] K2:text-[54px]">Bake Shop</h4>
+          <NavLink class="button-28" href="Productos">Productos</NavLink>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+@* Define a C# variable for the image source *@
+@code {
+  private string imagePath = "/Assets/Placer.png";
+}
